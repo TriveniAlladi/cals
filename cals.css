@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('cals22.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s ease;
+    
+}
+
+.calculator-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+}
+
+.screen {
+    margin-bottom: 20px;
+}
+
+#result {
+    width: 90%;
+    height: 50px;
+    font-size: 20px;
+    text-align: right;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+#toggle-mode {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 13px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.light-mode .calculator-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
+
+.dark-mode .calculator-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.light-mode .btn {
+    background-color: #ddd;
+    color: #333;
+}
+
+.dark-mode .btn {
+    background-color: #555;
+    color: white;
+}
